@@ -23,4 +23,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::resource('users', App\Http\Controllers\UserController::class);
+Route::resource('loads', App\Http\Controllers\LoadController::class);
 Route::post('/upload', [App\Http\Controllers\UserController::class, 'upload'])->name('upload');
