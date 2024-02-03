@@ -18,7 +18,8 @@ class CreateShipperTable extends Migration
             $table->unsignedInteger('load_id');
             $table->string('name')->nullable();
             $table->string('location')->nullable(); 
-            $table->datetime('ship_date')->nullable(); 
+            $table->date('ship_date')->nullable();
+            $table->time('ship_time')->nullable(); 
             $table->text('description')->nullable(); 
             $table->string('type')->nullable(); 
             $table->string('qty')->nullable(); 

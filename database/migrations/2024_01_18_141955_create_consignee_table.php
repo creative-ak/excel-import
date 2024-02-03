@@ -16,16 +16,17 @@ class CreateConsigneeTable extends Migration
         Schema::create('consignees', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('load_id');
-            $table->string('name')->nullable();
-            $table->string('location')->nullable(); 
-            $table->datetime('consign_date')->nullable(); 
-            $table->text('description')->nullable(); 
-            $table->string('type')->nullable(); 
-            $table->string('qty')->nullable(); 
-            $table->string('weight')->nullable(); 
-            $table->string('amt')->nullable(); 
-            $table->text('notes')->nullable(); 
-            $table->text('po_number')->nullable(); 
+            $table->string('con_name')->nullable();
+            $table->string('con_location')->nullable(); 
+            $table->date('consign_date')->nullable(); 
+            $table->time('consign_time')->nullable(); 
+            $table->text('con_description')->nullable(); 
+            $table->string('con_type')->nullable(); 
+            $table->string('con_qty')->nullable(); 
+            $table->string('con_weight')->nullable(); 
+            $table->string('con_amt')->nullable(); 
+            $table->text('con_notes')->nullable(); 
+            $table->text('con_po_number')->nullable(); 
             $table->timestamps();
         });
     }

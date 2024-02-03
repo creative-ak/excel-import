@@ -24,7 +24,6 @@
                 <div class="row">
                     @include('loads.fields')
                 </div>
-
             </div>
 
             <div class="card-footer">
